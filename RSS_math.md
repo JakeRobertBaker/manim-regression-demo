@@ -46,7 +46,7 @@ $$
 
 $$ 
 
-The last equals is a result of properties of orthogonal projection:
+The last equals is a result of properties of orthogonal projection: $\forall v \in V=\mathbb{R^n}$ it holds that,
 
 $$
 P_{U_0 \oplus U_1}v = \underbrace{
@@ -59,8 +59,6 @@ P_{U_0 \oplus U_1}v = \underbrace{
         \langle v, u_{p_0+p_1} \rangle u_{p_0+p_1}
 
     }_{P_{U_1}v}
-
-\forall v \in V=\mathbb{R^n}
 
 $$
 

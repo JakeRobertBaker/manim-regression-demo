@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/bakej/Documents/manim-regression-demo/try-project/media/videos/scene/480p15/partial_movie_files/PlaneLinePointAnimation/2635572769_2517002963_2482933615.mp4'
+file 'file:C:/Users/bakej/Documents/manim-regression-demo/try-project/media/videos/scene/480p15/partial_movie_files/PlaneLinePointAnimation/3189990392_4205520711_3277227789.mp4'
+file 'file:C:/Users/bakej/Documents/manim-regression-demo/try-project/media/videos/scene/480p15/partial_movie_files/PlaneLinePointAnimation/3189990392_211887877_2601491692.mp4'
+file 'file:C:/Users/bakej/Documents/manim-regression-demo/try-project/media/videos/scene/480p15/partial_movie_files/PlaneLinePointAnimation/4128412980_3207442680_897161868.mp4'
