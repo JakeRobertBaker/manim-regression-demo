@@ -1,5 +1,6 @@
 # RSS ANOVA Proof
 
+## Geometry
 Let $X = [X_0, X_1] \in \mathbb{R}^{n \times p}$ for $X_0 \in \mathbb{R}^{n \times p_0}$ and $X_1 \in \mathbb{R}^{n \times p_1}$ for $p=p_0+p_1$.
 
 Let's apply the Gram–Schmidt Procedure to the columns of $X$. We assume that $X$ has linearly independant columns $x_0...x_p$.
@@ -72,4 +73,63 @@ since $X \beta_0 \in U_0$. Therefore it holds that
 
 $$
 \hat{\epsilon_0} - \hat{\epsilon} = P_{U_1}\ \epsilon
+$$
+
+## Distributions of the Geometry
+
+If $Z \in \mathbb{R}^n$ is standard normal then it holds that for any orthonormal basis, the coordinate of $Z$ wrt each basis element is independantly normal. 
+
+Therefore for any subspace $U \leq \mathbb{R}^n$ it holds that $P_{U}Z$ is standard normal of dimension $\dim U$.
+
+We assume that 
+$
+\epsilon \sim N(0, I_n)
+$.
+
+Therefore, since 
+$
+\hat{\epsilon_0} - \hat{\epsilon} = P_{U_1}\ \epsilon
+$, it holds that
+$
+\frac{\hat{\epsilon_0} - \hat{\epsilon}}{ \sigma}
+\sim
+N(0,I_{p_1})
+$ and 
+
+$$
+\lVert \frac{\hat{\epsilon_0} - \hat{\epsilon}}{ \sigma} \rVert
+\sim \chi_{p_1}
+$$
+
+Similiarly, since
+$
+\hat{\epsilon} = P_{(U_0 \oplus U_1)^\perp} \epsilon
+$, it holds that
+$
+\frac{\hat{\epsilon}}{ \sigma}
+\sim
+N(0,I_{n-(p_0+p_1)}) 
+= N(0,I_{n-p})
+$ and
+
+$$
+\lVert \frac{\hat{\epsilon}}{\sigma} \rVert
+\sim \chi_{n-p}
+$$
+
+Now because of the orthogonality of $U_1$ and $(U_0 \oplus U_1)^\perp$ it holds that $\hat{\epsilon_0} - \hat{\epsilon}$ and $\hat{\epsilon}$ are independant.
+
+Hence,
+$$
+\cfrac{
+    \rVert \hat{\epsilon_0} - \hat{\epsilon} \rVert / p_1}
+{\lVert \hat{\epsilon} \rVert \ /\left( n-p \right)}
+\sim F_{p_1,n-p}
+$$
+
+for $p=p_0+p_1$. If we let $q=p_0$ we get a more familiar formulation,
+$$
+\cfrac{\rVert \hat{\epsilon_0} - \hat{\epsilon} \rVert / p-q}
+{\lVert \hat{\epsilon} \rVert \ /\left( n-p \right)}
+\sim F_{p-q,n-p}
 $$
